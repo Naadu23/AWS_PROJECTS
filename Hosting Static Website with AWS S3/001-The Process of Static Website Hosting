@@ -1,0 +1,37 @@
+ACTIONS REQUIRED TO HOST A STATIC WEBSITE USING S3.
+
+Simple Storage Service is referred to as S3. This service is provided by AWS to give customers limitless data storage. 
+In order to use S3, buckets must first be created. Consider S3 bucket as a file manager that contains files, folders, and subfolders.
+A region must be chosen when creating an S3 Bucket. Always choose one based on where you are.
+A static website has web pages with pre-written content that always shows the same data to users.
+
+Make sure you have the website's source code ready on your computer so you can upload it as needed before you start.
+Keep in mind that we'll be using the standard tier, which offers high availability because it keeps our data across three regions.
+
+STEP 1 - CREATE BUCKET
+To open the S3 Management Console, locate S3 in the AWS console.
+Click the "create bucket" button in the bucket window.
+Enter the information for your bucket, such as name and region, in the new window.
+To make your bucket public, uncheck the "Block public access setting" box and click Acknowledge.
+Enable encryption and bucket versioning but leave all other features at their default settings.
+Next, select "Create bucket."
+
+STEP 2 - UPLOAD
+Click the upload button after selecting the newly created bucket.
+Your source code's contents can be uploaded using the add files or folder feature or by dragging and dropping them from your computer into the box given.
+Click the upload button to continue, and then the exit button upload is completed.
+
+STEP 3 - WEB HOSTING
+Find the "static website hosting" tab by going to the properties tab of the bucket you just made and scrolling down.
+After clicking edit, choose enable.
+The hosting type should remain "host a static website."
+Enter the name of your index document—the.html file—and any error documents you may have in the corresponding text field.
+To access your website, click the Save Changes button and then click the link provided.
+
+STEP 4 - PERMISSIONS
+Simply select "make public" from the permissions overview in the bucket's permissions tab.
+Similar to that, scroll down to bucket policy if you're missing that block and click  "Edit".
+We'll be including a policy that grants read-only access to the newly established bucket to anonymous users. From the AWS Docs, we can obtain a functional json code.
+Look up the "read-only access for anonymous users" policy, copy it, and paste it into the bucket policy.
+Change the bucket arn on the line that starts with "Resource" to the one you can see in the bucket policy window's top left corner.
+Save your modifications and reload the tab in which you opened the provided URL to your site. You have used AWS S3 to successfully run a static website.
