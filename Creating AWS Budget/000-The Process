@@ -1,1 +1,21 @@
-WE BEGIN
+SETTING UP A BUDGET IN AMAZON WEB SERVICE(AWS) - CLOUD.
+
+It is usually preferable to begin developing solutions with a budget established as a cloud engineer or cloud solution architect. This keeps you from going over your budget for a particular project or solution because you will be alerted as soon as you are getting close to your spending restrictions.
+I'll illustrate how to use AWS Cost Management in a root account to set a project budget of one dollar ($1.00) and receive email notifications for the budget in this document.
+
+Let's start now.
+
+Sign in as a root user and navigate to the AWS Management Console.
+Look up "cost management" or "cost explorer" in the AWS Management Console.
+When you find Cost Explorer or management, click it to launch it.
+On the left panel of the launched Management console, select “Budget". To start, choose "Create a Budget" in the budget window.
+Select a cost budget, then click Next to configure your budget.
+Give the budget a name, choose your preferred time frame, but keep the renewal type set to recurring, the start month unchanged, and the method fixed. I gave my budget the label "Monthly Budget" and selected "month" as the chosen time frame. Type the project budget in dollars. For this demonstration, we've settled on a dollar.
+Select "All Services" for the budget scope, especially if you are in charge of managing the master account or the AWS operations for your firm.
+
+In the drop-down menu that appears when you click the down arrow, select all supported charge types and leave the "Aggregate cost by" field as "Unblended cost." The setting up of notifications will follow, after clicking next.
+Select "Add an alert threshold."
+Choose "actual" (as an exact figure) for how to trigger notifications and a percentage for when the alarm should be triggered. Add up to ten email addresses of individuals who should be informed when the budget cap is reached.
+Since there is no budget action required, we can skip it and select the next button to evaluate the budget.
+Click "Create Budget" after you've reviewed your budget.
+And with that, we're done.
