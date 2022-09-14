@@ -1,0 +1,8 @@
+Creating User Groups.
+Instead of assigning policies to specific individuals, it is preferable to manage users in groups that share comparable policies or permissions. Users inherit the permissions associated with the group they are added to when they do so.
+
+STEPS.
+Click "User Group" or "Groups" in the IAM Dashboard's left panel. Continue by selecting the group screen's "Create group" button.
+Naming the group in the same manner as naming a user. You have the option of adding the desired users immediately or later. Later, we'll do it.
+To view a list of available policies, select "Attach existing policies" or scroll down. Find "Administrator Access" in the list of existing policies and select it. Considering that we are making a group specifically for admin users.
+Finally, click "create group" to complete.
