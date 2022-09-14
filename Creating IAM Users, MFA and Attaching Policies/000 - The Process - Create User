@@ -1,0 +1,18 @@
+CREATING A USER
+
+Log into the AWS Management Console as the root user. Search the AWS Management Console for "IAM."
+Click "IAM" to start it when you find it.
+Click "Users" on the IAM Dashboard's left panel after it has been launched. Click the "Add user" button to continue in the user window.
+Give the user a name and select the sort of access you would like to grant, either programmatic access or password access under AWS Credential.
+NOTE
+When a user has programmatic access, they can execute operations without using a graphical user interface by using the console to issue commands, however, when a user has a password access key, they must use a graphical user interface. Select whether to generate a password or offer a personalized one. Additionally, a checkbox for password reset is present. Depending on whether you want your newly formed user to modify and reset their password or not, you can check or uncheck this box. I named my user "NaaduB," checked the programmatic and password access key boxes, but kept the password reset box unchecked. I also decided to give my user a personalized password. Pick a password that is easy for you to remember. To set permissions, select next.
+
+Click "Attach existing policies" to see a list of available policies. These policies give us the ability to specify the permissions we are giving, as well as to which services and to whom. Look for "Administrator Access" in the list of active policies, then select it. We chose this policy since we are creating an admin user and need this access. Never grant users administrative privileges unless it is necessary. As a best practice, you should never log into AWS using your root account or your email address and password. Instead, establish an admin user and log in using its credentials.
+
+Next, include tags. Similar to metadata, tags provide information about the users or objects they are associated with. I'm going to assign the key name and value AdminRole to this user. This will make it easier for me to remember that this user has administrator privileges.
+Continue with the review, and when you're done, click "create user."
+
+NOTE
+Before leaving the pop-up window, be sure to download the.csv file. The file includes the login link and other credentials required to use the newly created user. Similarly, in an organization, you can send an email to whoever you created as an AWS user.
+
+
