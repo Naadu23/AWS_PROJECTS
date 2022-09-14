@@ -1,0 +1,8 @@
+MFA configuration.
+MFA stands for Multi-Factor Authentication. MFA can be defined as using two or more methods to confirm your identity while signing in or gaining access to an account. When MFA is enabled for a user, the user will always be prompted to enter a code in addition to the password when logging in. This provides more security.
+
+STEPS
+From the user window, select a user and navigate to the security credentials tab.
+Select the "Manage" link associated with the MFA device and select "Virtual MFA" in the pop-up window, then click "Next."
+To continue, get the Google Authenticator App from Play Store and use it to follow the instructions on the current window. Launch the app on your phone and log in by scanning the QR code. Tap the + symbol after logging in to generate the codes. Select two MFA codes; each code expires after a predetermined period. For more difficult login problems in the future, you can screenshot the QR code.
+To end, click "Assign MFA".
