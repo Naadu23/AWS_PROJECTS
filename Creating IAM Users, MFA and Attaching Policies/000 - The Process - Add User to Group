@@ -1,0 +1,6 @@
+Adding Users to Groups.
+
+Click "user" in the left panel to return to the users' window.
+Choose a user from the user window. Let's choose the newly created Admin user. Remove "administrator access" from the permissions tab, then click detach on the pop-up that appears.
+Select "groups" from the same window that displays the selected user. Select "Add User to Group."
+Click "Add to group" after selecting the group to which you granted Administrator access.
